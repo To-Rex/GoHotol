@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     SMTP_FROM: str = "noreply@xms.com"
 
     CORS_ORIGINS: List[str] = ["*"]
+    PORT: int = 8001
 
     model_config = {
         "env_file": ".env",
